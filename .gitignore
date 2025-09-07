@@ -1,16 +1,41 @@
-# Byte-compiled / optimized / DLL files
+# Python / caches
 __pycache__/
 *.py[cod]
-*.pyo
+*$py.class
+
+# Virtualenvs
+env/
+venv/
+.venv/
+venv.bak/
 
 # Jupyter
 .ipynb_checkpoints/
 
-# Virtual environments
-.venv/
-env/
-venv/
+# Data & dataset archives - DO NOT push datasets
+data/
+**/data/
+datasets/
+raw/
+**/raw/
+*.tar.gz
+*.tgz
+*.zip
+*.gz
+*.npz
 
-# OS
+# Models / checkpoints
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.model
+
+# OS / editor
 .DS_Store
 Thumbs.db
+.vscode/
+.idea/
+
+# Logs, outputs
+*.log
