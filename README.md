@@ -21,13 +21,13 @@ This process builds anti-fragile skills, focusing not just on how to build thing
 *Mastering the core mechanics of PyTorch and the engineering of a professional training process.*
 
 *   **[✅] Chunks 1-5: The Fundamentals** - Tensors, Autograd, `nn.Module`, Loss, Optimizers.
-*   **[➡️] Chunk 6: Training Loop Mastery**
+*   **[✅] Chunk 6: Training Loop Mastery**
     *   **Clinical:** Engineer a professional, reusable `train.py` script with logging, command-line arguments, and model saving on **FashionMNIST**.
     *   **Crucible:** Stress-test the script on the **Clothing1M** dataset (subset) with ~40% noisy labels, forcing adaptation and debugging.
-*   **[ ] Chunk 7: Data Pipeline Mastery (`Dataset` & `DataLoader`)**
+*   **[✅] Chunk 7: Data Pipeline Mastery (`Dataset` & `DataLoader`)**
     *   **Clinical:** Build a custom `Dataset` for a simple image folder structure (`/class_a`, `/class_b`).
     *   **Crucible:** Adapt the pipeline for a large dataset that doesn't fit in memory (e.g., a Kaggle dataset), implementing efficient transforms and optimizing `num_workers`.
-*   **[ ] Chunk 8: Advanced Metrics & Evaluation**
+*   **[✅] Chunk 8: Advanced Metrics & Evaluation**
     *   **Clinical:** Implement precision, recall, and F1-score for the balanced **CIFAR-10** dataset.
     *   **Crucible:** Tackle an imbalanced classification problem (e.g., Credit Card Fraud from Kaggle), demonstrating why accuracy is a flawed metric and implementing AUC-ROC curves.
 
