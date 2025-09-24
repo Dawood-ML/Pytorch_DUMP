@@ -33,3 +33,4 @@ Thumbs.db
 .idea/
 # Logs, outputs
 *.log
+data_old
