@@ -1,0 +1,27 @@
+[project]
+name = "pytorch_dump"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "torch",
+    "torchvision", 
+    "torchaudio",
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "optuna",
+    "jupyter",
+    "ipykernel",
+    "matplotlib",
+    "seaborn",
+]
+
+[[tool.uv.index]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch" }
+torchvision = { index = "pytorch" }
+torchaudio = { index = "pytorch" }

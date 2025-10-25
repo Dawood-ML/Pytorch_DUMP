@@ -34,3 +34,4 @@ Thumbs.db
 # Logs, outputs
 *.log
 data_old
+creditcard.csv
