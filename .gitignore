@@ -1,15 +1,11 @@
-﻿# Python / caches
-__pycache__/
+﻿__pycache__/
 *.py[cod]
 *.class
-# Virtualenvs
 env/
 venv/
 .venv/
 venv.bak/
-# Jupyter
 .ipynb_checkpoints/
-# Data & dataset archives - DO NOT push datasets
 data/
 **/data/
 datasets/
@@ -20,18 +16,18 @@ raw/
 *.zip
 *.gz
 *.npz
-# Models / checkpoints
 *.pth
 *.pt
 *.ckpt
 *.h5
 *.model
-# OS / editor
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
-# Logs, outputs
 *.log
 data_old
 creditcard.csv
+chest_xray
+plots
+other_details
