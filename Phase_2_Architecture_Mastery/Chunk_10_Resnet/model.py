@@ -35,6 +35,8 @@ When NOT to use: For very shallow networks, the complexity might be unnecessary.
 A plain CNN might suffice and be faster.
 
 For more information : https://youtu.be/Q1JCrG1bJ-A?si=3P06b8JyZseIvrsv
+
+For ResNet Research Paper : https://arxiv.org/pdf/1512.03385
 """
 
 ####################################################################################
@@ -157,7 +159,6 @@ def ResNet18():
 if __name__ == "__main__":
     # 4. Visualization (of shapes)
     print("Testing ResNet-18 Architecture")
-
     # Create a dummy input tensor with the shape of a single batch from our dataloader
     # (batch_size, channels, height, width)
     dummy_input = torch.randn(64, 3, 32, 32)
@@ -168,7 +169,9 @@ if __name__ == "__main__":
     # Pass the dummy input through the model
     output = model(dummy_input)
     print(model)
-
+    torch.onnx.export(model, dummy_input, "model.onnx")
+    # open https://netron.app/ and then upload model.onnx in there
+    
     # Check the output shape
     print(f"\nInput shape : {dummy_input.shape}")
     print(f"Output Shape: {output.shape}") # Should be [batch_Size, num_classes], e.g., [64,10]

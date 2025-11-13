@@ -172,6 +172,7 @@ if __name__ == '__main__':
 ######################################################################################
 ######################################################################################
 
+
 # Constants: We define the pre-computed MEAN and STD for CIFAR-10. Hard-coding these is standard practice. 
 # Normalizing with the correct statistics is critical for model performance, especially when using pre-trained models later.
 
