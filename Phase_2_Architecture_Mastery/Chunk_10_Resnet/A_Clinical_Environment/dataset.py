@@ -113,7 +113,8 @@ def get_dataloaders(batch_size = BATCH_SIZE):
     train_dataset = DatasetWrapper(subset=train_subset, transform=transform_train)
     val_dataset  = DatasetWrapper(subset=val_subset,
                                    transform=transform_test)
-    
+    test_dataset = DatasetWrapper(subset=full_testset, transform=transform_test)
+
     print(f"Number of training samples: {len(train_dataset)}")
     print(f"Number of validation samples: {len(val_dataset)}")
     print(f"Number of test samples: {len(full_testset)}")
@@ -137,11 +138,11 @@ def get_dataloaders(batch_size = BATCH_SIZE):
         pin_memory=True
     )
     test_loader = DataLoader(
-        dataset=full_testset,
+        dataset=test_dataset,
         batch_size=BATCH_SIZE,
         shuffle=False,
         num_workers=2,
-        pin_memory=True
+        pin_memory=True,
     )
     ################################################
     return train_loader, val_loader, test_loader
